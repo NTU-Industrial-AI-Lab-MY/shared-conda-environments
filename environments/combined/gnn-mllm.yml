@@ -3,6 +3,7 @@ channels:
   - pyg
   - pytorch
   - nvidia
+  - dglteam/label/cu121
   - conda-forge
   - defaults
 dependencies:
@@ -23,9 +24,8 @@ dependencies:
   - torchaudio=2.1.0
   - pytorch-cuda=12.1
   - pyg=2.5.2
+  - dgl=2.0.0
   - pip:
-      # GNN base: keep torch managed by Conda above.
-      - dgl==2.0.0+cu121 -f https://data.dgl.ai/wheels/cu121/repo.html
       # MLLM / retrieval / agent extensions. These must not reinstall torch.
       - transformers>=4.30.0
       - sentence-transformers>=2.2.0
