@@ -3,6 +3,7 @@ channels:
   - pyg
   - pytorch
   - nvidia
+  - dglteam/label/cu121
   - conda-forge
   - defaults
 dependencies:
@@ -23,6 +24,4 @@ dependencies:
   - torchaudio=2.1.0
   - pytorch-cuda=12.1
   - pyg=2.5.2
-  - pip:
-      # Keep torch managed by Conda above. Do not add torch, torchvision, or torchaudio here.
-      - dgl==2.0.0+cu121 -f https://data.dgl.ai/wheels/cu121/repo.html
+  - dgl=2.0.0
