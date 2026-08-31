@@ -1,0 +1,12 @@
+# Install only after activating an existing GNN environment.
+# This file intentionally does not include torch, torchvision, torchaudio, PyG, DGL, or CUDA packages.
+# The GNN environment should keep control of the torch/CUDA/DGL/PyG stack.
+
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+opencv-python>=4.7.0
+ollama>=0.1.0
+neo4j>=5.0.0
+faiss-cpu>=1.7.0
+pypdf>=3.0.0
+prodsys>=0.5.0
