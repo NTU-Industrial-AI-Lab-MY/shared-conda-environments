@@ -1,0 +1,6 @@
+# Shared torch/CUDA compatibility constraints for GNN-related environments.
+# Do not loosen these constraints without updating the whole GNN stack together.
+
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
