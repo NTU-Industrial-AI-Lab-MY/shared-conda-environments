@@ -1,0 +1,29 @@
+name: uricard-drl
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - networkx
+  - jupyterlab
+  - ipykernel
+  - tqdm
+  - pyyaml
+  - pytorch=2.1.0
+  - torchvision=0.16.0
+  - torchaudio=2.1.0
+  - pytorch-cuda=12.1
+  - pip:
+      # Pinned to stay compatible with torch=2.1.0. Newer Stable-Baselines3 releases may require newer torch.
+      - stable-baselines3==2.3.2
+      - gymnasium>=0.29.1,<1.0
+      - tensorboard>=2.9.1
