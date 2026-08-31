@@ -1,0 +1,27 @@
+name: uricard-production-supply-chain-network
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - networkx
+  - plotly
+  - jupyterlab
+  - ipykernel
+  - openpyxl
+  - pyomo
+  - pulp
+  - simpy
+  - tqdm
+  - pyyaml
+  - requests
+  - pip:
+      - prodsys>=0.5.0
+      - python-dotenv
