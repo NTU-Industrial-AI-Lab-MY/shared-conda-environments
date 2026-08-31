@@ -1,0 +1,21 @@
+name: uricard-core
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - networkx
+  - jupyterlab
+  - ipykernel
+  - tqdm
+  - pyyaml
+  - openpyxl
+  - pip:
+      - python-dotenv
