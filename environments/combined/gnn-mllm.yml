@@ -1,0 +1,37 @@
+name: uricard-gnn-mllm
+channels:
+  - pyg
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.13
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - networkx
+  - jupyterlab
+  - ipykernel
+  - tqdm
+  - pytorch=2.1.0
+  - torchvision=0.16.0
+  - torchaudio=2.1.0
+  - pytorch-cuda=12.1
+  - pyg=2.5.2
+  - pip:
+      # GNN base: keep torch managed by Conda above.
+      - dgl==2.0.0+cu121 -f https://data.dgl.ai/wheels/cu121/repo.html
+      # MLLM / retrieval / agent extensions. These must not reinstall torch.
+      - transformers>=4.30.0
+      - sentence-transformers>=2.2.0
+      - opencv-python>=4.7.0
+      - ollama>=0.1.0
+      - neo4j>=5.0.0
+      - faiss-cpu>=1.7.0
+      - pypdf>=3.0.0
+      - prodsys>=0.5.0
