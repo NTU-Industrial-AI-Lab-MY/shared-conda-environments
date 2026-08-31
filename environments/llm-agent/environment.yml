@@ -1,0 +1,23 @@
+name: uricard-llm-agent
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - networkx
+  - jupyterlab
+  - ipykernel
+  - pyyaml
+  - tqdm
+  - requests
+  - pip:
+      - python-dotenv
+      - openai
+      - langchain
+      - langchain-openai
+      - langgraph
+      - ollama
+      - neo4j
